@@ -1,42 +1,25 @@
-﻿// Copyright Epic Games, Inc. All Rights Reserved.
-
 using UnrealBuildTool;
 
 public class UnrealFlecsStateTree : ModuleRules
 {
-	public UnrealFlecsStateTree(ReadOnlyTargetRules Target) : base(Target)
-	{
-		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-		
-		PublicIncludePaths.AddRange(
-			new string[] {
-				ModuleDirectory,
-			}
-			);
-				
-		
-		PrivateIncludePaths.AddRange(
-			new string[] {
-				// ... add other private include paths required here ...
-			}
-			);
-			
-		
-		PublicDependencyModuleNames.AddRange(
-			new string[]
-			{
-				"Core",
-				// ... add other public dependencies that you statically link with here ...
-			}
-			);
-			
-		
-		PrivateDependencyModuleNames.AddRange(
-			new string[]
-			{
-				"CoreUObject",
-				"Engine",
-			}
-			);
-	}
+    public UnrealFlecsStateTree(ReadOnlyTargetRules Target) : base(Target)
+    {
+        PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+
+        PublicDependencyModuleNames.AddRange(new[]
+        {
+            "Core",
+            "CoreUObject",
+            "Engine",
+            "UnrealFlecs",
+            "FlecsLibrary",
+            "StateTreeModule"
+        });
+
+        PrivateDependencyModuleNames.AddRange(new[]
+        {
+            "FlecsLibrary",
+            "GameplayStateTreeModule"
+        });
+    }
 }

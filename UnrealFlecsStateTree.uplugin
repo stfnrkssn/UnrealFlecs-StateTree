@@ -1,33 +1,37 @@
-﻿{
-	"FileVersion": 3,
-	"Version": 1,
-	"VersionName": "1.0",
-	"FriendlyName": "UnrealFlecsStateTree",
-	"Description": "",
-	"Category": "Other",
-	"CreatedBy": "Reddy-dev",
-	"CreatedByURL": "",
-	"DocsURL": "",
-	"MarketplaceURL": "",
-	"CanContainContent": true,
-	"IsBetaVersion": true,
-	"IsExperimentalVersion": true,
-	"Installed": false,
-	"Modules": [
-		{
-			"Name": "UnrealFlecsStateTree",
-			"Type": "Runtime",
-			"LoadingPhase": "Default"
-		}
-	],
-	"Plugins": [
-		{
-			"Name": "SolidMacros",
-			"Enabled": true
-		},
-		{
-			"Name": "UnrealFlecs",
-			"Enabled": true
-		}
-	]
+{
+    "FileVersion":  3,
+    "Version":  1,
+    "VersionName":  "1.0",
+    "FriendlyName":  "Unreal Flecs StateTree",
+    "Description":  "Bridges UnrealFlecs with Unreal Engine StateTree runtime",
+    "Category":  "Gameplay",
+    "CreatedBy":  "ZZ Project",
+    "CreatedByURL":  "https://github.com/stfnrkssn",
+    "DocsURL":  "",
+    "MarketplaceURL":  "",
+    "CanContainContent":  false,
+    "IsBetaVersion":  false,
+    "IsExperimentalVersion":  false,
+    "Installed":  false,
+    "Modules":  [
+                    {
+                        "Name":  "UnrealFlecsStateTree",
+                        "Type":  "Runtime",
+                        "LoadingPhase":  "Default"
+                    }
+                ],
+    "Plugins":  [
+                    {
+                        "Name":  "UnrealFlecs",
+                        "Enabled":  true
+                    },
+                    {
+                        "Name":  "StateTree",
+                        "Enabled":  true
+                    },
+                    {
+                        "Name":  "GameplayStateTree",
+                        "Enabled":  true
+                    }
+                ]
 }
